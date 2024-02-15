@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+  <header>
+    <div class="header_back">
+        <div class="container">
+
+            <div class="header_res">
+                <div class="header_left">
+                    <ul>
+                        <li><a href="/assets/pages/about.html">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            Haqqımızda
+                        </a></li>
+                        <li>
+                            <a href="/assets/pages/contact.html">
+                                <i class="fa-solid fa-phone"></i>
+                                Əlaqə
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/assets/pages/profile.html">
+                                <i class="fa-solid fa-money-check"></i>
+                                Bank Hesablarımız
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header_right">
+                    <ul>
+                        <li>
+                            <a style="background-color: #EA9904;" href="/assets/pages/balance.html">
+                                <i class="fa-solid fa-plus"></i>
+                                Balans yüklə
+                            </a>
+                        </li>
+                        <li id="userSingup">
+                            <a href="./assets/pages/login.html">
+                                <i class="fa-solid fa-user-plus"></i>
+                                Qeydiyyat
+                            </a>
+                        </li>
+                        <li id="userControl">
+                            <a href="./assets/pages/login.html">
+                                <i class="fa-solid fa-right-to-bracket"></i>
+                                Giriş
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light p-0">
+                <a class="navbar-brand" href="/pole.html">POLE SHOP</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown" onmouseenter="toggleDropdown('dropdownMenu1', true)" onmouseleave="toggleDropdown('dropdownMenu1', false)">
+                            <a class="nav-link" href="#" id="navbarDropdownMenuLink1" aria-haspopup="true" aria-expanded="false">
+                                BALANS
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1" id="dropdownMenu1">
+                                <a class="dropdown-item" href="/assets/pages/balance.html">Balans artır</a>
+                                <a class="dropdown-item" href="/assets/pages/profile.html">Bank Hesabları</a>
+                                <a target="_blank" class="dropdown-item" href="https://www.youtube.com/watch?v=YpoUr60EX30">Necə Artırılır?</a>
+                            </div>
+                            <div class="underline-animation"></div>
+                        </li>
+                        <li class="nav-item dropdown" onmouseenter="toggleDropdown('dropdownMenu2', true)" onmouseleave="toggleDropdown('dropdownMenu2', false)">
+                            <a class="nav-link" href="#" id="navbarDropdownMenuLink2" aria-haspopup="true" aria-expanded="false">
+                                BONUS
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2" id="dropdownMenu2">
+                                <a class="dropdown-item" href="#">Giveaway'lər (Tezliklə)</a>
+                                <a class="dropdown-item" href="#">Turnirlər (Tezliklə)</a>
+                            </div>
+                            <div class="underline-animation"></div>
+                        </li>
+                        <li class="nav-item dropdown" onmouseenter="toggleDropdown('dropdownMenu3', true)" onmouseleave="toggleDropdown('dropdownMenu3', false)">
+                            <a class="nav-link" href="#" id="navbarDropdownMenuLink3" aria-haspopup="true" aria-expanded="false">
+                                KÖMƏK
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3" id="dropdownMenu3">
+                                <a class="dropdown-item" href="/assets/pages/about.html">Haqqımızda</a>
+                                <a class="dropdown-item" href="/assets/pages/contact.html">Əlaqə</a>
+                                <a class="dropdown-item" href="/assets/pages/profile.html">Bank Hesablarımız</a>
+                            </div>
+                            <div class="underline-animation"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/assets/pages/news.html">XƏBƏRLƏR</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="/assets/pages/basket.html">
+                              <i class="fa-solid fa-basket-shopping" id="basket-icon"></i>
+                              <span id="basket-count" class="basket-count"></span>
+                          </a>
+                      </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+    <main>
+        <section id="game-title">
+            <div class="container">
+                <div class="game_title">
+                    <p>GAMES</p>
+                </div>
+            </div>
+        </section>
+        <section id="game">
+            <div class="container">
+                <div class="game_all">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="game_number">
+                                <i class="fa-solid fa-gamepad"></i>
+                                <p>Oyunlar Haqqında Ətraflı Məlumat</p>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="straight"></div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-12 col-12">
+                            <div class="card-container">
+                                <div class="card flash">
+                                  <div class="card-content">
+                                    <div class="card-front">
+                                      <p class="sub-title">2024</p>
+                                      <h1 class="title">PUBG</h1>
+                                      <p class="sub-title">MOBİLE</p>
+                                    </div>
+                                    <div class="card-back">
+                                      <h2 class="back-title">PUBG MOBİLE</h2>
+                                      <p class="movie-description">
+                                        <span>
+                                          information: </span>PUBG Mobile məşhur multiplayer döyüş royale oyunu PlayerUnknown's Battlegrounds-un mobil versiyasıdır. PUBG Mobile, Tencent Games və PUBG Corporation tərəfindən hazırlanmışdır. 
+                                      </p>
+                                      <p class="release-date">
+                                        <span>Release Date: </span> 2018
+                                      </p>
+                                      <a target="_blank" style="color: white;" href="https://www.youtube.com/@PUBGMOBILE" class="btn">Ətraflı</a>
+                                      <a style="color: white;" href="/assets/pages/games/pubg.html" class="btn">UC SATIN AL</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-6 col-md-12 col-12">
+                            <div class="card-container">
+                                <div class="card hulk">
+                                    <div class="card-content">
+                                      <div class="card-front">
+                                        <p class="sub-title">2024</p>
+                                        <h1 class="title">POİNT</h1>
+                                        <p class="sub-title">BLANK</p>
+                                      </div>
+                                      <div class="card-back">
+                                        <h2 class="back-title">POINT BLANK</h2>
+                                        <p class="movie-description">
+                                          <span>information: </span>
+                                          Point Blank Zepetto tərəfindən hazırlanmış və paylanmış məşhur onlayn birinci şəxs atıcı (FPS) oyunudur. İlk dəfə 2008-ci ildə Cənubi Koreyada buraxıldı və tezliklə bütün dünyada böyük oyunçu bazasına çatdı.
+                                        </p>
+                                        <p class="release-date">
+                                          <span>Release Date: </span> 2008
+                                        </p>
+                                        <a target="_blank" style="color: white;" href="https://www.youtube.com/@pbespor" class="btn">Ətraflı</a>
+                                        <a style="color: white;" href="/assets/pages/games/pb.html" class="btn">TG SATIN AL</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-12 col-12">
+                            <div class="card-container">
+                                <div class="card valorant">
+                                    <div class="card-content">
+                                      <div class="card-front">
+                                        <p class="sub-title">2024</p>
+                                        <h1 class="title">VALORANT</h1>
+                                        <p class="sub-title">RİOT</p>
+                                      </div>
+                                      <div class="card-back">
+                                        <h2 class="back-title">VALORANT</h2>
+                                        <p class="movie-description">
+                                          <span>information: </span>
+                                          Valorant, Riot Games tərəfindən hazırlanmış və nəşr edilmiş birinci şəxs atıcı (FPS) taktiki oyunudur. Oyun 5v5 multiplayer matçlarında iki komanda arasında mübarizəyə əsaslanır.
+                                        </p>
+                                        <p class="release-date">
+                                          <span>Release Date: </span> 2020
+                                        </p>
+                                        <a target="_blank" style="color: white;" href="https://www.youtube.com/@valorant" class="btn">Ətraflı</a>
+                                        <a style="color: white;" href="/assets/pages/games/valorant.html" class="btn">VP SATIN AL</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-12 col-12">
+                            <div class="card-container">
+                                <div class="card fortnite">
+                                    <div class="card-content">
+                                      <div class="card-front">
+                                        <p class="sub-title">2024</p>
+                                        <h1 class="title">FORTNİTE</h1>
+                                        <p class="sub-title">EPİC</p>
+                                      </div>
+                                      <div class="card-back">
+                                        <h2 class="back-title">FORTNİTE</h2>
+                                        <p class="movie-description">
+                                          <span>information: </span>
+                                          Fortnite, Epic Games tərəfindən hazırlanmış və nəşr edilmiş məşhur döyüş royalı video oyunudur. İlk dəfə 2017-ci ildə buraxılan Fortnite tez bir zamanda bütün dünyada böyük oyunçu bazası qazandı.
+                                        </p>
+                                        <p class="release-date">
+                                          <span>Release Date: </span> 2014
+                                        </p>
+                                        <a target="_blank" style="color: white;" href="https://www.youtube.com/@fortnite" class="btn">Ətraflı</a>
+                                        <a style="color: white;" href="/assets/pages/games/fortnite.html" class="btn">VPapel SATIN AL</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-12 col-12">
+                            <div class="card-container">
+                                <div class="card clashof">
+                                    <div class="card-content">
+                                      <div class="card-front">
+                                        <p class="sub-title">2024</p>
+                                        <h1 class="title">CLASH</h1>
+                                        <p class="sub-title">CLANS</p>
+                                      </div>
+                                      <div class="card-back">
+                                        <h2 class="back-title">CLASH OF CLANS</h2>
+                                        <p class="movie-description">
+                                          <span>information: </span>
+                                          Clash of Clans Supercell tərəfindən hazırlanmış məşhur strategiya və döyüş oyunudur. Oyun iOS və Android platformalarında oynana bilər və milyonlarla istifadəçi tərəfindən oynanılır.
+                                        </p>
+                                        <p class="release-date">
+                                          <span>Release Date: </span> 2012
+                                        </p>
+                                        <a target="_blank" style="color: white;" href="https://www.youtube.com/@ClashOfClans" class="btn">Ətraflı</a>
+                                        <a style="color: white;" href="/assets/pages/games/clans.html" class="btn">TAŞ SATIN AL</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-12 col-12">
+                            <div class="card-container">
+                                <div class="card royale">
+                                    <div class="card-content">
+                                      <div class="card-front">
+                                        <p class="sub-title">2024</p>
+                                        <h1 class="title">CLASH</h1>
+                                        <p class="sub-title">ROYALE</p>
+                                      </div>
+                                      <div class="card-back">
+                                        <h2 class="back-title">CLASH ROYALE</h2>
+                                        <p class="movie-description">
+                                          <span>information: </span>
+                                          Clash Royale Supercell tərəfindən hazırlanmış və nəşr edilmiş məşhur strategiya kartı oyunudur. Oyun iOS və Android platformalarında oynana bilər və oyunçular arasında real vaxt multiplayer problemlərinə əsaslanır.
+                                        </p>
+                                        <p class="release-date">
+                                          <span>Release Date: </span> 2016
+                                        </p>
+                                        <a target="_blank" style="color: white;" href="https://www.youtube.com/@ClashRoyale" class="btn">Ətraflı</a>
+                                        <a style="color: white;" href="/assets/pages/games/royale.html" class="btn">TAŞ SATIN AL</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-12 col-12">
+                            <div class="card-container">
+                                <div class="card fire">
+                                    <div class="card-content">
+                                      <div class="card-front">
+                                        <p class="sub-title">2024</p>
+                                        <h1 class="title">FREE</h1>
+                                        <p class="sub-title">FIRE</p>
+                                      </div>
+                                      <div class="card-back">
+                                        <h2 class="back-title">FREE FIRE</h2>
+                                        <p class="movie-description">
+                                          <span>information: </span>
+                                          Free Fire, Garena tərəfindən hazırlanmış və nəşr edilmiş məşhur döyüş royalı oyunudur. Oyun mobil cihazlar üçün iOS və Android platformalarında oynana bilər.
+                                        </p>
+                                        <p class="release-date">
+                                          <span>Release Date: </span> 2017
+                                        </p>
+                                        <a target="_blank" style="color: white;" href="https://www.youtube.com/@GarenaFreeFireGlobal" class="btn">Ətraflı</a>
+                                        <a style="color: white;" href="/assets/pages/games/free.html" class="btn">ELMAS SATIN AL</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-12 col-12">
+                            <div class="card-container">
+                                <div class="card steam">
+                                    <div class="card-content">
+                                      <div class="card-front">
+                                        <p class="sub-title">2024</p>
+                                        <h1 class="title">STEAM</h1>
+                                        <p class="sub-title">GAMES</p>
+                                      </div>
+                                      <div class="card-back">
+                                        <h2 class="back-title">STEAM</h2>
+                                        <p class="movie-description">
+                                          <span>information: </span>
+                                          Steam, Valve Corporation tərəfindən hazırlanmış və nəşr olunan rəqəmsal paylama platformasıdır. Steam video oyunların və digər proqram təminatının rəqəmsal yayılmasına və istifadəçilərin bu məzmunlara çıxışına imkan verir.
+                                        </p>
+                                        <p class="release-date">
+                                          <span>Release Date: </span> 2003
+                                        </p>
+                                        <a target="_blank" style="color: white;" href="https://www.youtube.com/watch?v=ZFY1-zgy2ggt" class="btn">Ətraflı</a>
+                                        <a style="color: white;" href="/assets/pages/games/steam.html" class="btn">STEAM SATIN AL</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-12 col-12">
+                            <div class="card-container">
+                                <div class="card brawl">
+                                    <div class="card-content">
+                                      <div class="card-front">
+                                        <p class="sub-title">2024</p>
+                                        <h1 class="title">BRAWL</h1>
+                                        <p class="sub-title">STARS</p>
+                                      </div>
+                                      <div class="card-back">
+                                        <h2 class="back-title">BRAWL STARS</h2>
+                                        <p class="movie-description">
+                                          <span>information: </span>
+                                          Brawl Stars, Supercell tərəfindən hazırlanmış və nəşr edilmiş məşhur multiplayer onlayn döyüş oyunudur. Mobil cihazlar üçün iOS və Android platformalarında pulsuz oynaya bilər.
+                                        </p>
+                                        <p class="release-date">
+                                          <span>Release Date: </span> 2017
+                                        </p>
+                                        <a target="_blank" style="color: white;" href="https://www.youtube.com/@BrawlStars" class="btn">Ətraflı</a>
+                                        <a style="color: white;" href="/assets/pages/games/brawl.html" class="btn">ELMAS SATIN AL</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+      <div class="container">
+          <div class="games_footer">
+              <div class="row games_res">
+                  <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                      <div class="about_us">
+                          <h6>HAQQIMIZDA</h6>
+                          <p>Saytımız Azərbaycanda oyunlara ödəniş etmək istəyən oyunçular üçün rahat və sərfəli qiymətə ödəniş edəbiləcəyi bir saytdır. Əgər səndə hansısa oyuna ödəniş etmək istəyirsənsə sağ aşağıda çıxan mesaj qutucuğunnan oyunun adını yazıb saytımızda olub olmadığı haqda məlumat əldə edə bilərsiniz</p>
+                      </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                      <div class="row">
+                          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                              <div class="poleaz">
+                                  <h6>POLEAZ</h6>
+                                  <a href="/assets/pages/games.html">Oyunlar</a>
+                                  <a href="/assets/pages/profile.html">Ödəmə Yöntəmləri</a>
+                                  <a href="/assets/pages/rules.html">Qanun və Qaydalar</a>
+                                  <a href="/assets/pages/about.html">Haqqımızda</a>
+                                  <a href="/assets/pages/contact.html">Əlaqə</a>
+                              </div>
+                          </div>
+                          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                              <div class="popular_game">
+                                  <h6>MƏŞHUR OYUNLAR</h6>
+                                  <a href="/assets/pages/games/steam.html">Steam Oyunları</a>
+                                  <a href="/assets/pages/games/pubg.html">Pubg Mobile UC</a>
+                                  <a href="/assets/pages/games/pb.html">Point Blank TG</a>
+                                  <a href="/assets/pages/games/clans.html">Clash Of Clans Taş</a>
+                                  <a href="/assets/pages/games/brawl.html">Brawl Stars Elmas</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-12">
+                      <div class="straight"></div>
+                  </div>
+                  <div class="col-12">
+                      <div class="copyright">
+                          <p>Copyright © 2024 Bütün hüquqları qorunur.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="/assets/js/login_index.js"></script>
+    <script src="/assets/js/drop.js"></script>
+    <script src="/assets/js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

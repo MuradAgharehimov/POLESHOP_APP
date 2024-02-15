@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/assets/css/main.css">
+	<link rel="stylesheet" href="/assets/css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<header>
+        <div class="header_back">
+            <div class="container">
+
+                <div class="header_res">
+                    <div class="header_left">
+                        <ul>
+                            <li><a href="/assets/pages/about.html">
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                Haqqımızda
+                            </a></li>
+                            <li>
+                                <a href="/assets/pages/contact.html">
+                                    <i class="fa-solid fa-phone"></i>
+                                    Əlaqə
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/assets/pages/profile.html">
+                                    <i class="fa-solid fa-money-check"></i>
+                                    Bank Hesablarımız
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header_right">
+                        <ul>
+                            <li>
+                                <a style="background-color: #EA9904;" href="/assets/pages/balance.html">
+                                    <i class="fa-solid fa-plus"></i>
+                                    Balans yüklə
+                                </a>
+                            </li>
+                            <li id="userSingup">
+                                <a href="/assets/pages/login.html">
+                                    <i class="fa-solid fa-user-plus"></i>
+                                    Qeydiyyat
+                                </a>
+                            </li>
+                            <li id="userControl">
+                                <a href="/assets/pages/login.html">
+                                    <i class="fa-solid fa-right-to-bracket"></i>
+                                    Giriş
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light p-0">
+                    <a class="navbar-brand" href="/pole.html">POLE SHOP</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item dropdown" onmouseenter="toggleDropdown('dropdownMenu1', true)" onmouseleave="toggleDropdown('dropdownMenu1', false)">
+                                <a class="nav-link" href="#" id="navbarDropdownMenuLink1" aria-haspopup="true" aria-expanded="false">
+                                    BALANS
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1" id="dropdownMenu1">
+                                    <a class="dropdown-item" href="/assets/pages/balance.html">Balans artır</a>
+                                    <a class="dropdown-item" href="/assets/pages/profile.html">Bank Hesabları</a>
+                                    <a target="_blank" class="dropdown-item" href="https://www.youtube.com/watch?v=YpoUr60EX30">Necə Artırılır?</a>
+                                </div>
+                                <div class="underline-animation"></div>
+                            </li>
+                            <li class="nav-item dropdown" onmouseenter="toggleDropdown('dropdownMenu2', true)" onmouseleave="toggleDropdown('dropdownMenu2', false)">
+                                <a class="nav-link" href="#" id="navbarDropdownMenuLink2" aria-haspopup="true" aria-expanded="false">
+                                    BONUS
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2" id="dropdownMenu2">
+                                    <a class="dropdown-item" href="#">Giveaway'lər (Tezliklə)</a>
+                                    <a class="dropdown-item" href="#">Turnirlər (Tezliklə)</a>
+                                </div>
+                                <div class="underline-animation"></div>
+                            </li>
+                            <li class="nav-item dropdown" onmouseenter="toggleDropdown('dropdownMenu3', true)" onmouseleave="toggleDropdown('dropdownMenu3', false)">
+                                <a class="nav-link" href="#" id="navbarDropdownMenuLink3" aria-haspopup="true" aria-expanded="false">
+                                    KÖMƏK
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3" id="dropdownMenu3">
+                                    <a class="dropdown-item" href="/assets/pages/about.html">Haqqımızda</a>
+                                    <a class="dropdown-item" href="/assets/pages/contact.html">Əlaqə</a>
+                                    <a class="dropdown-item" href="/assets/pages/profile.html">Bank Hesablarımız</a>
+                                </div>
+                                <div class="underline-animation"></div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/assets/pages/news.html">XƏBƏRLƏR</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/assets/pages/basket.html">
+                                    <i class="fa-solid fa-basket-shopping" id="basket-icon"></i>
+                                    <span id="basket-count" class="basket-count"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+	<main>
+        <section id="login_pole">
+            <div class="section">
+                <div class="container">
+                    <div class="row full-height justify-content-center">
+                        <div class="col-12 text-center align-self-center py-5">
+                            <div class="section pb-5 pt-5 pt-sm-2 text-center">
+                                <h6 class="mb-0 pb-3"><span>Log In </span><span>Sign Up</span></h6>
+                                <input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
+                                <label for="reg-log"></label>
+                                <div class="card-3d-wrap mx-auto">
+                                    <div class="card-3d-wrapper">
+                                        <div class="card-front">
+                                            <div class="center-wrap">
+                                                <div class="section text-center">
+                                                    <form id="loginForm">
+                                                        <h4 class="mb-4 pb-3">Log In</h4>
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-style" placeholder="enter you fullanme" id="fullname">
+                                                            <i class="input-icon uil uil-at"></i>
+                                                        </div>  
+                                                        <div class="form-group mt-2">
+                                                            <input type="password" class="form-style" placeholder="Password" id="loginPassword">
+                                                            <i class="input-icon uil uil-lock-alt"></i>
+                                                        </div>
+                                                        <button type="submit" class="btn mt-4">Login</button>
+                                                    </form>
+                                                    <p class="mb-0 mt-4 text-center"><a href="#" class="link">Forgot your password?</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-back">
+                                            <div class="center-wrap">
+                                                <div class="section text-center">
+                                                    <form id="registerForm">
+                                                        <h4 class="mb-3 pb-3">Sign Up</h4>
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-style" placeholder="Full Name" id="registerFullName">
+                                                            <i class="input-icon uil uil-user"></i>
+                                                        </div>  
+                                                        <div class="form-group mt-2">
+                                                            <input type="tel" class="form-style" placeholder="Phone Number" id="registerPhoneNumber">
+                                                            <i class="input-icon uil uil-phone"></i>
+                                                        </div>  
+                                                        <div class="form-group mt-2">
+                                                            <input type="email" class="form-style" placeholder="Email" id="registerEmail">
+                                                            <i class="input-icon uil uil-at"></i>
+                                                        </div>
+                                                        <div class="form-group mt-2">
+                                                            <input type="password" class="form-style" placeholder="Password" id="registerPassword">
+                                                            <i class="input-icon uil uil-lock-alt"></i>
+                                                        </div>
+                                                        <button type="submit" class="btn mt-4">Register</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+	<footer>
+        <div class="container">
+            <div class="games_footer">
+                <div class="row games_res">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="about_us">
+                            <h6>HAQQIMIZDA</h6>
+                            <p>Saytımız Azərbaycanda oyunlara ödəniş etmək istəyən oyunçular üçün rahat və sərfəli qiymətə ödəniş edəbiləcəyi bir saytdır. Əgər səndə hansısa oyuna ödəniş etmək istəyirsənsə sağ aşağıda çıxan mesaj qutucuğunnan oyunun adını yazıb saytımızda olub olmadığı haqda məlumat əldə edə bilərsiniz</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                                <div class="poleaz">
+                                    <h6>POLEAZ</h6>
+                                    <a href="/assets/pages/games.html">Oyunlar</a>
+                                    <a href="/assets/pages/profile.html">Ödəmə Yöntəmləri</a>
+                                    <a href="/assets/pages/rules.html">Qanun və Qaydalar</a>
+                                    <a href="/assets/pages/about.html">Haqqımızda</a>
+                                    <a href="/assets/pages/contact.html">Əlaqə</a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                                <div class="popular_game">
+                                    <h6>MƏŞHUR OYUNLAR</h6>
+                                    <a href="/assets/pages/games/steam.html">Steam Oyunları</a>
+                                    <a href="/assets/pages/games/pubg.html">Pubg Mobile UC</a>
+                                    <a href="/assets/pages/games/pb.html">Point Blank TG</a>
+                                    <a href="/assets/pages/games/clans.html">Clash Of Clans Taş</a>
+                                    <a href="/assets/pages/games/brawl.html">Brawl Stars Elmas</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="straight"></div>
+                    </div>
+                    <div class="col-12">
+                        <div class="copyright">
+                            <p>Copyright © 2024 Bütün hüquqları qorunur.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="/assets/js/login_index.js"></script>
+	<script src="/assets/js/drop.js"></script>
+    <script src="/assets/js/index.js"></script>
+	<script src="/assets/js/login.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
+</body>
+</html>

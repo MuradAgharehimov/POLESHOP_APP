@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/news.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+      <div class="header_back">
+          <div class="container">
+
+              <div class="header_res">
+                  <div class="header_left">
+                      <ul>
+                          <li><a href="/assets/pages/about.html">
+                              <i class="fa-solid fa-circle-exclamation"></i>
+                              Haqqımızda
+                          </a></li>
+                          <li>
+                              <a href="/assets/pages/contact.html">
+                                  <i class="fa-solid fa-phone"></i>
+                                  Əlaqə
+                              </a>
+                          </li>
+                          <li>
+                              <a href="/assets/pages/profile.html">
+                                  <i class="fa-solid fa-money-check"></i>
+                                  Bank Hesablarımız
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="header_right">
+                      <ul>
+                          <li>
+                              <a style="background-color: #EA9904;" href="/assets/pages/balance.html">
+                                  <i class="fa-solid fa-plus"></i>
+                                  Balans yüklə
+                              </a>
+                          </li>
+                          <li id="userSingup">
+                              <a href="./assets/pages/login.html">
+                                  <i class="fa-solid fa-user-plus"></i>
+                                  Qeydiyyat
+                              </a>
+                          </li>
+                          <li id="userControl">
+                              <a href="./assets/pages/login.html">
+                                  <i class="fa-solid fa-right-to-bracket"></i>
+                                  Giriş
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="header">
+          <div class="container">
+              <nav class="navbar navbar-expand-lg navbar-light p-0">
+                  <a class="navbar-brand" href="/pole.html">POLE SHOP</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                      <ul class="navbar-nav ml-auto">
+                          <li class="nav-item dropdown" onmouseenter="toggleDropdown('dropdownMenu1', true)" onmouseleave="toggleDropdown('dropdownMenu1', false)">
+                              <a class="nav-link" href="#" id="navbarDropdownMenuLink1" aria-haspopup="true" aria-expanded="false">
+                                  BALANS
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1" id="dropdownMenu1">
+                                  <a class="dropdown-item" href="/assets/pages/balance.html">Balans artır</a>
+                                  <a class="dropdown-item" href="/assets/pages/profile.html">Bank Hesabları</a>
+                                  <a target="_blank" class="dropdown-item" href="https://www.youtube.com/watch?v=YpoUr60EX30">Necə Artırılır?</a>
+                              </div>
+                              <div class="underline-animation"></div>
+                          </li>
+                          <li class="nav-item dropdown" onmouseenter="toggleDropdown('dropdownMenu2', true)" onmouseleave="toggleDropdown('dropdownMenu2', false)">
+                              <a class="nav-link" href="#" id="navbarDropdownMenuLink2" aria-haspopup="true" aria-expanded="false">
+                                  BONUS
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2" id="dropdownMenu2">
+                                  <a class="dropdown-item" href="#">Giveaway'lər (Tezliklə)</a>
+                                  <a class="dropdown-item" href="#">Turnirlər (Tezliklə)</a>
+                              </div>
+                              <div class="underline-animation"></div>
+                          </li>
+                          <li class="nav-item dropdown" onmouseenter="toggleDropdown('dropdownMenu3', true)" onmouseleave="toggleDropdown('dropdownMenu3', false)">
+                              <a class="nav-link" href="#" id="navbarDropdownMenuLink3" aria-haspopup="true" aria-expanded="false">
+                                  KÖMƏK
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3" id="dropdownMenu3">
+                                  <a class="dropdown-item" href="/assets/pages/about.html">Haqqımızda</a>
+                                  <a class="dropdown-item" href="/assets/pages/contact.html">Əlaqə</a>
+                                  <a class="dropdown-item" href="/assets/pages/profile.html">Bank Hesablarımız</a>
+                              </div>
+                              <div class="underline-animation"></div>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="/assets/pages/news.html">XƏBƏRLƏR</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="/assets/pages/basket.html">
+                                <i class="fa-solid fa-basket-shopping" id="basket-icon"></i>
+                                <span id="basket-count" class="basket-count"></span>
+                            </a>
+                        </li>
+                      </ul>
+                  </div>
+              </nav>
+          </div>
+      </div>
+  </header>
+    <main>
+        <section>
+
+            <ul class="slider">
+              <li
+                class="item"
+                style="
+                  background-image: url('/assets/img/valorantx_tournament.png');
+                "
+              >
+                <div class="content">
+                  <h2 class="title">"FREE FIRE"</h2>
+                  <p class="description">
+                    A gaming tournament is an organized event, usually in which a game is played over a period of time and participants compete for a specific goal or prize. Tournaments usually consist of several stages and qualifying rounds are held among the participants. At the end, the best player or team is determined to win the first prize or prestige.
+                  </p>
+                </div>
+              </li>
+              <li
+                class="item"
+                style="background-image: url('/assets/img/freex_tournament.png')"
+              >
+                <div class="content">
+                  <h2 class="title">"FREE FIRE"</h2>
+                  <p class="description">
+                    A gaming tournament is an organized event, usually in which a game is played over a period of time and participants compete for a specific goal or prize. Tournaments usually consist of several stages and qualifying rounds are held among the participants. At the end, the best player or team is determined to win the first prize or prestige.
+                  </p>
+                </div>
+              </li>
+              <li
+                class="item"
+                style="
+                  background-image: url('/assets/img/fortnitex_tournament.png');
+                "
+              >
+                <div class="content">
+                  <h2 class="title">"FORTNİTE"</h2>
+                  <p class="description">
+                    A gaming tournament is an organized event, usually in which a game is played over a period of time and participants compete for a specific goal or prize. Tournaments usually consist of several stages and qualifying rounds are held among the participants. At the end, the best player or team is determined to win the first prize or prestige.
+                  </p>
+                </div>
+              </li>
+              <li
+                class="item"
+                style="
+                  background-image: url('/assets/img/pubgx_tournament.png');
+                "
+              >
+                <div class="content">
+                  <h2 class="title">"PUBG MOBİLE"</h2>
+                  <p class="description">
+                    A gaming tournament is an organized event, usually in which a game is played over a period of time and participants compete for a specific goal or prize. Tournaments usually consist of several stages and qualifying rounds are held among the participants. At the end, the best player or team is determined to win the first prize or prestige.
+                  </p>
+                </div>
+              </li>
+              <li
+                class="item"
+                style="
+                  background-image: url('/assets/img/point_tournamenty.png');
+                "
+              >
+                <div class="content">
+                  <h2 class="title">"POİNT BLANK"</h2>
+                  <p class="description">
+                    A gaming tournament is an organized event, usually in which a game is played over a period of time and participants compete for a specific goal or prize. Tournaments usually consist of several stages and qualifying rounds are held among the participants. At the end, the best player or team is determined to win the first prize or prestige.
+                  </p>
+                </div>
+              </li>
+              <li
+                class="item"
+                style="
+                  background-image: url('/assets/img/brawl_tournamentx.png');
+                "
+              >
+                <div class="content">
+                  <h2 class="title">"BRAWL STARS"</h2>
+                  <p class="description">
+                    A gaming tournament is an organized event, usually in which a game is played over a period of time and participants compete for a specific goal or prize. Tournaments usually consist of several stages and qualifying rounds are held among the participants. At the end, the best player or team is determined to win the first prize or prestige.
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <nav class="nav">
+              <ion-icon class="btn prev" name="arrow-back-outline"></ion-icon>
+              <ion-icon class="btn next" name="arrow-forward-outline"></ion-icon>
+            </nav>
+        </section>
+    </main>
+    <footer>
+      <div class="container">
+          <div class="games_footer">
+              <div class="row games_res">
+                  <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                      <div class="about_us">
+                          <h6>HAQQIMIZDA</h6>
+                          <p>Saytımız Azərbaycanda oyunlara ödəniş etmək istəyən oyunçular üçün rahat və sərfəli qiymətə ödəniş edəbiləcəyi bir saytdır. Əgər səndə hansısa oyuna ödəniş etmək istəyirsənsə sağ aşağıda çıxan mesaj qutucuğunnan oyunun adını yazıb saytımızda olub olmadığı haqda məlumat əldə edə bilərsiniz</p>
+                      </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                      <div class="row">
+                          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                              <div class="poleaz">
+                                  <h6>POLEAZ</h6>
+                                  <a href="/assets/pages/games.html">Oyunlar</a>
+                                  <a href="/assets/pages/profile.html">Ödəmə Yöntəmləri</a>
+                                  <a href="/assets/pages/rules.html">Qanun və Qaydalar</a>
+                                  <a href="/assets/pages/about.html">Haqqımızda</a>
+                                  <a href="/assets/pages/contact.html">Əlaqə</a>
+                              </div>
+                          </div>
+                          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                              <div class="popular_game">
+                                  <h6>MƏŞHUR OYUNLAR</h6>
+                                  <a href="/assets/pages/games/steam.html">Steam Oyunları</a>
+                                  <a href="/assets/pages/games/pubg.html">Pubg Mobile UC</a>
+                                  <a href="/assets/pages/games/pb.html">Point Blank TG</a>
+                                  <a href="/assets/pages/games/clans.html">Clash Of Clans Taş</a>
+                                  <a href="/assets/pages/games/brawl.html">Brawl Stars Elmas</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-12">
+                      <div class="straight"></div>
+                  </div>
+                  <div class="col-12">
+                      <div class="copyright">
+                          <p>Copyright © 2024 Bütün hüquqları qorunur.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="/assets/js/login_index.js"></script>
+    <script src="/assets/js/news.js"></script>
+    <script src="/assets/js/index.js"></script>
+    <script src="/assets/js/drop.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
